@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# DSA Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1️⃣ Introduction
 
-## Available Scripts
+DSA Visualizer is an interactive, web-based application designed to help users learn and understand a wide range of Data Structures and Algorithms (DSA) through clear, step-by-step visualizations. The project covers sorting, searching, graph algorithms, dynamic programming, greedy methods, backtracking, tree operations, and mathematical algorithms. Whether you're a student or a professional, this tool provides an engaging way to see how algorithms work internally and how data is manipulated throughout the process.
 
-In the project directory, you can run:
+## 2️⃣ Features
 
-### `npm start`
+### Core Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Interactive Visualizations:**  
+  Watch algorithms in action with detailed animations that show every intermediate step of the process.
+  
+- **Custom Input:**  
+  Users can enter their own data (e.g., custom arrays, graphs, or strings) to see how the algorithms perform on different inputs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Speed Control:**  
+  Adjust the animation speed using a slider and dropdown, allowing you to slow down or speed up the visualization as needed.
 
-### `npm test`
+- **Mode Toggle (Theory/Practice):**  
+  - **Theory Mode:** Displays detailed explanations, pseudocode, and example steps for each algorithm.  
+  - **Practice Mode:** Provides an embedded code editor for hands-on experimentation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Pause/Resume:**  
+  During visualizations, use the Pause/Resume button to stop and continue the animation without resetting the current state.
 
-### `npm run build`
+### Bonus Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Responsive Design:**  
+  The user interface is optimized for various screen sizes and devices, ensuring a seamless experience on both desktops and mobiles.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Clear, Modern UI:**  
+  The application features a clean and modern design with clear typography, intuitive controls, and a consistent color palette.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 3️⃣ How to Use
 
-### `npm run eject`
+### Step-by-Step Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Installation:**
+   - Clone the repository:
+     ```bash
+     git clone https://github.com/yourusername/dsa-visualizer.git
+     cd dsa-visualizer
+     ```
+   - Install dependencies:
+     ```bash
+     npm install
+     ```
+   - Start the development server:
+     ```bash
+     npm start
+     ```
+   - Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Navigation:**
+   - Use the navigation menu to select different algorithm categories (e.g., Sorting, Searching, Graph Algorithms, etc.).
+   
+3. **Custom Input:**
+   - For any algorithm module, you can type a custom input (like an array or graph) into the provided input fields.
+   - Click the "Update" or "Random" button to refresh the visualization with your new data.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Speed Control:**
+   - Use the slider and dropdown to adjust the speed of the algorithm visualization.
+   - This is useful for observing the algorithm in slow motion or speeding it up once you understand the process.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Mode Toggle:**
+   - Switch between **Theory Mode** (to view detailed pseudocode, explanation, and example steps) and **Practice Mode** (which includes an embedded online code editor for further experimentation).
 
-## Learn More
+6. **Pause/Resume:**
+   - During any visualization, click the **Pause** button to stop the animation.
+   - Click **Resume** to continue from where you left off.
+   - When the algorithm completes, a final message (e.g., "Search Completed") is displayed.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 4️⃣ Technical Details
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Front-end Framework:**  
+  [React](https://reactjs.org/) is used to build the interactive UI components.
 
-### Code Splitting
+- **Animation Library:**  
+  [Framer Motion](https://www.framer.com/motion/) is used for smooth, production-ready animations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **JavaScript (ES6+):**  
+  The project leverages modern JavaScript features for clarity and performance.
 
-### Analyzing the Bundle Size
+- **Styling:**  
+  The UI uses a combination of inline CSS and external CSS (e.g., `SortingVisualizer.css`) for responsive and modern design.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 5️⃣ Future Enhancements
 
-### Advanced Configuration
+- **Expanded Algorithm Library:**  
+  Incorporate additional algorithms such as advanced graph algorithms, additional dynamic programming challenges, and other topics in computer science.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **User Authentication & Progress Tracking:**  
+  Allow users to create accounts, save their progress, bookmark favorite algorithms, and track their learning journey over time.
 
-### Deployment
+- **Enhanced Interactivity:**  
+  Add features like manual step controls (Next/Previous buttons), replay options, and interactive quizzes to test understanding.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Mobile Optimization:**  
+  Further refine the responsive design to offer an optimal experience on smartphones and tablets.
 
-### `npm run build` fails to minify
+- **Community Contributions:**  
+  Open the project for community contributions where users can suggest and add new algorithms, features, and improvements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
