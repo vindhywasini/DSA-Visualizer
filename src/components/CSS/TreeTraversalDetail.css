@@ -1,0 +1,278 @@
+/* =====================================
+   Global Styles for Tree Traversal Visualizer
+   ===================================== */
+   .tt-pageContainer {
+    padding: 20px;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+  }
+  
+  .tt-pageHeader {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* =====================================
+     Input Sections and Buttons
+     ===================================== */
+  .tt-inputContainer {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .tt-inputLabel {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .tt-textArea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    margin-bottom: 10px;
+  }
+  
+  .tt-primaryButton {
+    background: linear-gradient(45deg, #FF8C00, #FFB6C1);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* =====================================
+     Speed Control
+     ===================================== */
+  .tt-slider {
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .tt-dropdown {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  /* =====================================
+     Mode Toggle
+     ===================================== */
+  .tt-modeToggleContainer {
+    text-align: center; /* Center toggle buttons */
+    margin-bottom: 20px;
+  }
+  
+  .tt-toggleButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px; /* Even spacing */
+    background: #ddd;
+    color: #333;
+    transition: background 0.3s ease;
+  }
+  
+  .tt-activeToggle {
+    background: #FFB6C1;
+  }
+  
+  /* =====================================
+     Visualization Section
+     ===================================== */
+  .tt-visualizerContainer {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    height: 400px; /* Fixed height for visualization */
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333; /* Set background to black for contrast */
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tt-stepHeader {
+    text-align: center;
+    color: #FFB6C1;
+    margin-bottom: 10px;
+  }
+  
+  /* SVG Tree styling */
+  .tt-svg {
+    display: block;
+    margin: 0 auto;
+    background-color: #333; /* Ensure SVG background is black */
+    /* border: 1px solid #ccc; */
+  }
+  
+  /* White edges for tree connections */
+  .tt-edge {
+    stroke: #fff;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  /* Style for tree nodes */
+  .tt-node {
+    stroke: #444;
+    stroke-width: 2;
+  }
+  
+  /* =====================================
+     Info Text
+     ===================================== */
+  .tt-infoText {
+    text-align: center;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* =====================================
+     Theory and Code Blocks Section
+     ===================================== */
+  .tt-theoryContainer {
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .tt-sectionHeader {
+    color: #2E8B57;
+    margin-bottom: 10px;
+  }
+  
+  .tt-paragraph {
+    line-height: 1.6;
+  }
+  
+  .tt-codeBlock {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+  }
+  
+  .tt-codeBlockAlt {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+  }
+  
+  .tt-list {
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  /* =====================================
+     Editor Container for Practice Mode
+     ===================================== */
+  .tt-editorContainer {
+    border: 2px solid #2E8B57;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333;
+    margin-top: 20px;
+  }
+  
+  .tt-editorHeader {
+    color: #2E8B57;
+  }
+  
+  .tt-editorFrame {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* =====================================
+     Helper Classes
+     ===================================== */
+  .tt-centerText {
+    text-align: center;
+  }
+  
+  .tt-marginTop10 {
+    margin-top: 10px;
+  }
+  
+  .tt-completeMessage {
+    text-align: center;
+    color: #FFB6C1;;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* =====================================
+     Responsive Design
+     ===================================== */
+  /* For tablets and small desktops */
+  @media (max-width: 768px) {
+    .tt-pageContainer {
+      padding: 15px;
+    }
+    .tt-pageHeader {
+      font-size: 2rem;
+    }
+    .tt-textArea, .tt-slider {
+      max-width: 100%;
+      width: 90%;
+    }
+    .tt-visualizerContainer {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+    .tt-inputContainer {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .tt-pageHeader {
+      font-size: 1.8rem;
+    }
+    .tt-textArea, .tt-slider {
+      width: 100%;
+    }
+    .tt-primaryButton {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+    .tt-toggleButton {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+    .tt-visualizerContainer {
+      padding: 10px;
+      height: auto;
+    }
+  }
+  
+  

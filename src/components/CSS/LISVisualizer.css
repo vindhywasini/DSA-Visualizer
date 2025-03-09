@@ -1,0 +1,221 @@
+/* =====================================
+   Global Styles for LIS Visualizer
+   ===================================== */
+   .lis-pageContainer {
+    padding: 20px;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+  }
+  
+  .lis-pageHeader {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* =====================================
+     Input Sections and Buttons
+     ===================================== */
+  .lis-inputContainer {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .lis-inputLabel {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .lis-textInput {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    margin-bottom: 10px;
+  }
+  
+  /* Primary Button */
+  .lis-primaryButton {
+    background: linear-gradient(45deg, #FF8C00, #FFB6C1);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Speed Control */
+  .lis-slider {
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .lis-dropdown {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  /* Mode Toggle */
+  .lis-toggleButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    background: #ddd;
+    color: #333;
+    transition: background 0.3s ease;
+  }
+  
+  .lis-activeToggle {
+    background: #FFB6C1;
+  }
+  
+  /* Visualization Section */
+  .lis-visualizerContainer {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .lis-stepHeader {
+    text-align: center;
+    color: #FFB6C1;
+    margin-bottom: 10px;
+  }
+  
+  .lis-svg {
+    display: block;
+    margin: 0 auto;
+    background-color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  /* Theory and Code Blocks */
+  .lis-theoryContainer {
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .lis-sectionHeader {
+    color: #2E8B57;
+    margin-bottom: 10px;
+  }
+  
+  .lis-paragraph {
+    line-height: 1.6;
+  }
+  
+  .lis-codeBlock {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+  }
+  
+  .lis-list {
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  /* Editor Container */
+  .lis-editorContainer {
+    border: 2px solid #2E8B57;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333;
+    margin-top: 20px;
+  }
+  
+  .lis-editorHeader {
+    color: #2E8B57;
+  }
+  
+  .lis-editorFrame {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Completion Message */
+  .lis-completeMessage {
+    text-align: center;
+    color: #FFB6C1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .lis-pageContainer {
+      padding: 15px;
+    }
+    .lis-pageHeader {
+      font-size: 2rem;
+    }
+    .lis-textInput, .lis-slider {
+      max-width: 100%;
+      width: 90%;
+    }
+    .lis-visualizerContainer {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+    .lis-inputContainer {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .lis-pageHeader {
+      font-size: 1.8rem;
+    }
+    .lis-textInput, .lis-slider {
+      width: 100%;
+    }
+    .lis-primaryButton {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+    .lis-toggleButton {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+    .lis-visualizerContainer {
+      padding: 10px;
+      height: auto;
+    }
+  }
+  
+  /* Hide scrollbars */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  

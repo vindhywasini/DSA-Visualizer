@@ -1,0 +1,284 @@
+/* =====================================
+   Global Styles for LinearSearchDetail
+   ===================================== */
+   .linear-pageContainer {
+    padding: 20px;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+  }
+  
+  .linear-pageHeader {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* =====================================
+     Input Sections and Buttons
+     ===================================== */
+  .linear-inputSection {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .linear-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .linear-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    margin-bottom: 10px;
+  }
+  
+  .linear-smallInput {
+    max-width: 120px;
+  }
+  
+  .linear-buttonGroup {
+    margin-top: 10px;
+  }
+  
+  .linear-button {
+    background: linear-gradient(45deg, #FF8C00, #FFB6C1);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+  }
+  
+  .linear-buttonMarginLeft {
+    margin-left: 10px;
+  }
+  
+  /* =====================================
+     Slider and Dropdown Styles
+     ===================================== */
+  .linear-sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .linear-slider {
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .linear-dropdown {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  /* =====================================
+     Toggle Button Styles
+     ===================================== */
+  .linear-toggleButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    background: #ddd;
+    color: #333;
+    transition: background 0.3s ease;
+  }
+  
+  .linear-activeToggle {
+    background: #FFB6C1;
+  }
+  
+  /* =====================================
+     Visualization Section (Styled like Sorting Algos)
+     ===================================== */
+  .linear-visualizerContainer {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    height: 400px; /* Fixed height for visualization */
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333;
+    overflow: auto; /* Enables scrolling if content exceeds container height */
+  }
+  
+  .linear-stepHeader {
+    text-align: center;
+    color: #FFB6C1;
+    margin-bottom: 10px;
+  }
+  
+  .linear-arrayContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0;
+  }
+  
+  .linear-arrayBox {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 16px;
+    background: #fff;
+  }
+  
+  /* =====================================
+     Theory and Code Blocks Section
+     ===================================== */
+  .linear-theoryContainer {
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .linear-sectionHeader {
+    color: #2E8B57;
+    margin-bottom: 10px;
+  }
+  
+  .linear-paragraph {
+    line-height: 1.6;
+  }
+  
+  .linear-codeBlock {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+  }
+  
+  .linear-codeBlockAlt {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+  }
+  
+  .linear-list {
+    margin-left: 20px;
+  }
+  
+  /* =====================================
+     Editor Container for Practice Mode
+     ===================================== */
+  .linear-editorContainer {
+    border: 2px solid #2E8B57;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333;
+    margin-top: 20px;
+  }
+  
+  /* =====================================
+     Helper Classes
+     ===================================== */
+  .linear-centerText {
+    text-align: center;
+  }
+  
+  .linear-marginTop10 {
+    margin-top: 10px;
+  }
+  
+  .linear-completeMessage {
+    text-align: center;
+    color: #FFB6C1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .linear-infoText {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .linear-finalMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #2E8B57;
+  }
+  
+  /* =====================================
+     Responsive Design
+     ===================================== */
+  /* For tablets and small desktops */
+  @media (max-width: 768px) {
+    .linear-pageContainer {
+      padding: 15px;
+    }
+    .linear-pageHeader {
+      font-size: 2rem;
+    }
+    .linear-input, .linear-slider {
+      max-width: 100%;
+      width: 90%;
+    }
+    .linear-visualizerContainer {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+    .linear-arrayContainer {
+      gap: 3px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .linear-pageHeader {
+      font-size: 1.8rem;
+    }
+    .linear-input, .linear-slider {
+      width: 100%;
+    }
+    .linear-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+    .linear-toggleButton {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+    .linear-visualizerContainer {
+      padding: 10px;
+      height: auto;
+    }
+    .linear-arrayBox {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+    }
+  }
+  

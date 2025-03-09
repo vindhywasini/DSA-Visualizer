@@ -1,0 +1,302 @@
+/* =====================================
+   Global Styles for DFS Visualizer
+   ===================================== */
+   .dfs-pageContainer {
+    padding: 20px;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+  }
+  
+  .dfs-pageHeader {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* =====================================
+     Input Sections and Buttons
+     ===================================== */
+  .dfs-inputContainer {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .dfs-inputLabel {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .dfs-textInput {
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    margin-bottom: 10px;
+  }
+  
+  .dfs-primaryButton {
+    background: linear-gradient(45deg, #FF8C00, #FFB6C1);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dfs-slider {
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .dfs-dropdown {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .dfs-toggleButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    background: #ddd;
+    color: #333;
+    transition: background 0.3s ease;
+  }
+  
+  .dfs-activeToggle {
+    background: #FFB6C1;
+  }
+  
+  /* =====================================
+     Visualization Section (Styled like Sorting Algos)
+     ===================================== */
+  .dfs-visualizerContainer {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    height: 400px; /* Fixed height for visualization */
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dfs-stepHeader {
+    text-align: center;
+    color: #FFB6C1;
+    margin-bottom: 10px;
+  }
+  
+  /* SVG Graph styling */
+  .dfs-svg {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Style for graph edges */
+  .dfs-edge {
+    stroke: #fff;  /* White color for edges */
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  /* =====================================
+     Style for graph nodes
+     ===================================== */
+  /* These helper classes will override default colors.
+     Ensure your DFSVisualizer component applies:
+     - "dfs-current" for the current node
+     - "dfs-visited" for visited nodes
+     - "dfs-unvisited" for nodes not yet visited */
+  .dfs-node {
+    stroke: #444;
+    stroke-width: 2;
+  }
+  .dfs-node.dfs-current {
+    fill: #FF8C00 !important;
+  }
+  .dfs-node.dfs-visited {
+    fill: #90EE90 !important;
+  }
+  .dfs-node.dfs-unvisited {
+    fill: #fefefe !important;
+  }
+  
+  /* =====================================
+     Stack Visualization
+     ===================================== */
+  .dfs-stackContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .dfs-stackLabel {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dfs-stackNode {
+    width: 40px;
+    height: 40px;
+    background: #FF8C00;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  /* =====================================
+     Theory and Code Blocks Section
+     ===================================== */
+  .dfs-theoryContainer {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .dfs-sectionHeader {
+    color: #2E8B57;
+    margin-bottom: 10px;
+  }
+  
+  .dfs-paragraph {
+    line-height: 1.6;
+  }
+  
+  .dfs-codeBlock {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+  }
+  
+  .dfs-list {
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  /* =====================================
+     Editor Container for Practice Mode
+     ===================================== */
+  .dfs-editorContainer {
+    border: 2px solid #2E8B57;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333;
+    margin-top: 20px;
+  }
+  
+  .dfs-editorHeader {
+    color: #2E8B57;
+  }
+  
+  .dfs-editorFrame {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* =====================================
+     Helper Classes
+     ===================================== */
+  .dfs-centerText {
+    text-align: center;
+  }
+  
+  .dfs-marginTop10 {
+    margin-top: 10px;
+  }
+  
+  .dfs-completeMessage {
+    text-align: center;
+    color: #FFB6C1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .dfs-finalMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #2E8B57;
+  }
+  
+  /* =====================================
+     Responsive Design
+     ===================================== */
+  /* For tablets and small desktops */
+  @media (max-width: 768px) {
+    .dfs-pageContainer {
+      padding: 15px;
+    }
+    .dfs-pageHeader {
+      font-size: 2rem;
+    }
+    .dfs-textInput, .dfs-slider {
+      max-width: 100%;
+      width: 90%;
+    }
+    .dfs-visualizerContainer {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+    .dfs-inputContainer {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .dfs-pageHeader {
+      font-size: 1.8rem;
+    }
+    .dfs-textInput, .dfs-slider {
+      width: 100%;
+    }
+    .dfs-primaryButton {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+    .dfs-toggleButton {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+    .dfs-visualizerContainer {
+      padding: 10px;
+      height: auto;
+    }
+  }
+  
+  

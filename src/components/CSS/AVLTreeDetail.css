@@ -1,0 +1,265 @@
+/* =====================================
+   Global Styles for AVL Tree Visualizer
+   ===================================== */
+   .avl-pageContainer {
+    padding: 20px;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+  }
+  
+  .avl-pageHeader {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* =====================================
+     Input Sections and Buttons
+     ===================================== */
+  .avl-inputContainer {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .avl-inputLabel {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .avl-textInput {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    margin-bottom: 10px;
+  }
+  
+  /* Primary Buttons */
+  .avl-primaryButton {
+    background: linear-gradient(45deg, #FF8C00, #FFB6C1);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .avl-randomButton {
+    background: linear-gradient(45deg, #3b82f6, #14b8a6);
+    margin-left: 10px;
+  }
+  
+  /* =====================================
+     Speed Control
+     ===================================== */
+  .avl-slider {
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .avl-dropdown {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  /* =====================================
+     Mode Toggle
+     ===================================== */
+  .avl-modeToggleContainer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .avl-toggleButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    background: #ddd;
+    color: #333;
+    transition: background 0.3s ease;
+  }
+  
+  .avl-activeToggle {
+    background: #FFB6C1;
+  }
+  
+  /* =====================================
+     Visualization Section
+     ===================================== */
+  .avl-visualizerContainer {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333; /* Dark background for high contrast */
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avl-stepHeader {
+    text-align: center;
+    color: #FFB6C1;
+    margin-bottom: 10px;
+  }
+  
+  /* SVG Tree styling */
+  .avl-svg {
+    display: block;
+    margin: 0 auto;
+    background-color: #333; /* Ensure SVG background is dark */
+    border: 1px solid #ccc;
+  }
+  
+  /* White edges for tree connections */
+  .avl-edge {
+    stroke: #fff;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  /* Style for tree nodes */
+  .avl-node {
+    stroke: #444;
+    stroke-width: 2;
+  }
+  
+  /* =====================================
+     Theory and Code Blocks Section
+     ===================================== */
+  .avl-theoryContainer {
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .avl-sectionHeader {
+    color: #2E8B57;
+    margin-bottom: 10px;
+  }
+  
+  .avl-paragraph {
+    line-height: 1.6;
+  }
+  
+  .avl-codeBlock {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+  }
+  
+  .avl-codeBlockAlt {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+  }
+  
+  .avl-list {
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  /* =====================================
+     Editor Container for Practice Mode
+     ===================================== */
+  .avl-editorContainer {
+    border: 2px solid #2E8B57;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333;
+    margin-top: 20px;
+  }
+  
+  .avl-editorHeader {
+    color: #2E8B57;
+  }
+  
+  .avl-editorFrame {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* =====================================
+     Helper Classes
+     ===================================== */
+  .avl-completeMessage {
+    text-align: center;
+    color: #FFB6C1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* =====================================
+     Responsive Design
+     ===================================== */
+  /* For tablets and small desktops */
+  @media (max-width: 768px) {
+    .avl-pageContainer {
+      padding: 15px;
+    }
+    .avl-pageHeader {
+      font-size: 2rem;
+    }
+    .avl-textInput, .avl-slider {
+      max-width: 100%;
+      width: 90%;
+    }
+    .avl-visualizerContainer {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+    .avl-inputContainer {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .avl-pageHeader {
+      font-size: 1.8rem;
+    }
+    .avl-textInput, .avl-slider {
+      width: 100%;
+    }
+    .avl-primaryButton {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+    .avl-toggleButton {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+    .avl-visualizerContainer {
+      padding: 10px;
+      height: auto;
+    }
+  }
+  

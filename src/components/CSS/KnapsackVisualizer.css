@@ -1,0 +1,231 @@
+/* =====================================
+   Global Styles for Knapsack Visualizer
+   ===================================== */
+   .knapsack-pageContainer {
+    padding: 20px;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+  }
+  
+  .knapsack-pageHeader {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* =====================================
+     Input Sections and Buttons
+     ===================================== */
+  .knapsack-inputContainer {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .knapsack-inputLabel {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .knapsack-textInput {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    margin-bottom: 10px;
+  }
+  
+  /* Primary Buttons */
+  .knapsack-primaryButton {
+    background: linear-gradient(45deg, #FF8C00, #FFB6C1);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .knapsack-dropdown {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  /* =====================================
+     Speed Control
+     ===================================== */
+  .knapsack-slider {
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  /* =====================================
+     Mode Toggle
+     ===================================== */
+  .knapsack-toggleButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    background: #ddd;
+    color: #333;
+    transition: background 0.3s ease;
+  }
+  
+  .knapsack-activeToggle {
+    background: #FFB6C1;
+  }
+  
+  /* =====================================
+     Visualization Section
+     ===================================== */
+  .knapsack-visualizerContainer {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333; /* Dark background for contrast */
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .knapsack-stepHeader {
+    text-align: center;
+    color: #FFB6C1;
+    margin-bottom: 10px;
+  }
+  
+  .knapsack-svg {
+    display: block;
+    margin: 0 auto;
+    background-color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  /* =====================================
+     Theory and Code Blocks Section
+     ===================================== */
+  .knapsack-theoryContainer {
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .knapsack-sectionHeader {
+    color: #2E8B57;
+    margin-bottom: 10px;
+  }
+  
+  .knapsack-paragraph {
+    line-height: 1.6;
+  }
+  
+  .knapsack-codeBlock {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+  }
+  
+  .knapsack-list {
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  /* =====================================
+     Editor Container for Practice Mode
+     ===================================== */
+  .knapsack-editorContainer {
+    border: 2px solid #2E8B57;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333;
+    margin-top: 20px;
+  }
+  
+  .knapsack-editorHeader {
+    color: #2E8B57;
+  }
+  
+  .knapsack-editorFrame {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* =====================================
+     Completion Message
+     ===================================== */
+  .knapsack-completeMessage {
+    text-align: center;
+    color: #FFB6C1;;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* =====================================
+     Responsive Design
+     ===================================== */
+  @media (max-width: 768px) {
+    .knapsack-pageContainer {
+      padding: 15px;
+    }
+    .knapsack-pageHeader {
+      font-size: 2rem;
+    }
+    .knapsack-textInput, .knapsack-slider {
+      max-width: 100%;
+      width: 90%;
+    }
+    .knapsack-visualizerContainer {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+    .knapsack-inputContainer {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .knapsack-pageHeader {
+      font-size: 1.8rem;
+    }
+    .knapsack-textInput, .knapsack-slider {
+      width: 100%;
+    }
+    .knapsack-primaryButton {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+    .knapsack-toggleButton {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+    .knapsack-visualizerContainer {
+      padding: 10px;
+      height: auto;
+    }
+  }
+  

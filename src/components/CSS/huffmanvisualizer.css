@@ -1,0 +1,241 @@
+/* =====================================
+   Global Styles for HuffmanCodingVisualizer
+   ===================================== */
+   .huff-pageContainer {
+    padding: 20px;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+  }
+  
+  .huff-pageHeader {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* =====================================
+     Input Sections and Buttons
+     ===================================== */
+  .huff-inputContainer {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .huff-inputLabel {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .huff-textInput {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    margin-bottom: 10px;
+  }
+  
+  .huff-primaryButton {
+    background: linear-gradient(45deg, #FF8C00, #FFB6C1);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .huff-slider {
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .huff-dropdown {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .huff-toggleButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    background: #ddd;
+    color: #333;
+    transition: background 0.3s ease;
+  }
+  
+  .huff-activeToggle {
+    background: #FFB6C1;
+  }
+  
+  /* =====================================
+     Visualization Section (Styled like Sorting Algos)
+     ===================================== */
+  .huff-visualizerContainer {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    height: 400px; /* Fixed height for visualization */
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .huff-stepHeader {
+    text-align: center;
+    color: #FFB6C1;
+    margin-bottom: 10px;
+  }
+  
+  /* SVG Tree/Forest styling */
+  .huff-svg {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* =====================================
+     Theory and Code Blocks Section
+     ===================================== */
+  .huff-theoryContainer {
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .huff-sectionHeader {
+    color: #2E8B57;
+    margin-bottom: 10px;
+  }
+  
+  .huff-paragraph {
+    line-height: 1.6;
+  }
+  
+  .huff-codeBlock {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+  }
+  
+  .huff-list {
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  /* =====================================
+     Editor Container for Practice Mode
+     ===================================== */
+  .huff-editorContainer {
+    border: 2px solid #2E8B57;
+    padding: 15px;
+    border-radius: 8px;
+    background: #333;
+    margin-top: 20px;
+  }
+  
+  .huff-editorHeader {
+    color: #2E8B57;
+  }
+  
+  .huff-editorFrame {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* =====================================
+     Helper Classes
+     ===================================== */
+  .huff-centerText {
+    text-align: center;
+  }
+  
+  .huff-marginTop10 {
+    margin-top: 10px;
+  }
+  
+  .huff-completeMessage {
+    text-align: center;
+    color: #FFB6C1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .huff-finalMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #2E8B57;
+  }
+  
+  /* =====================================
+     Responsive Design
+     ===================================== */
+  /* For tablets and small desktops */
+  @media (max-width: 768px) {
+    .huff-pageContainer {
+      padding: 15px;
+    }
+    .huff-pageHeader {
+      font-size: 2rem;
+    }
+    .huff-textInput, .huff-slider {
+      max-width: 100%;
+      width: 90%;
+    }
+    .huff-visualizerContainer {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+    .huff-inputContainer {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .huff-pageHeader {
+      font-size: 1.8rem;
+    }
+    .huff-textInput, .huff-slider {
+      width: 100%;
+    }
+    .huff-primaryButton {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+    .huff-toggleButton {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+    .huff-visualizerContainer {
+      padding: 10px;
+      height: auto;
+    }
+  }
+  
